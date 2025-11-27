@@ -31,7 +31,7 @@ export default function Header() {
 
         <Link
           href="/zexcher"
-          className={`text-[#000] mx-[56px] no-underline underline-offset-8 decoration-[#fd993a] 
+          className={`text-[#000] ml-[56px] no-underline underline-offset-8 decoration-[#fd993a] 
           ${isActive("/zexcher") ? "underline" : "hover:underline"}`}
         >
           Զեղչեր
@@ -39,7 +39,7 @@ export default function Header() {
 
         <Link
           href="/carayutyun"
-          className={`text-[#000] no-underline underline-offset-8 decoration-[#fd993a] 
+          className={`text-[#000] ml-[56px] no-underline underline-offset-8 decoration-[#fd993a] 
           ${isActive("/carayutyun") ? "underline" : "hover:underline"}`}
         >
           Ծառայություններ
@@ -47,7 +47,7 @@ export default function Header() {
 
         <Link
           href="/mermasin"
-          className={`text-[#000]  mx-[56px] no-underline underline-offset-8 decoration-[#fd993a] 
+          className={`text-[#000]  ml-[56px] no-underline underline-offset-8 decoration-[#fd993a] 
           ${isActive("/mermasin") ? "underline" : "hover:underline"}`}
         >
           Մեր մասին
@@ -69,10 +69,10 @@ export default function Header() {
 
         <form className="w-[244px] flex justify-between py-[12px] px-[16px] border border-[rgba(16,22,35,0.2)] rounded-[40px]">
           <input
-            className="w-full border-0 text-sm leading-[19.4px] outline-none"
+            className="w-full border-0 text-sm leading-[19.4px] outline-none" placeholder="Որոնում"
           />
 
-          <button type="submit" className="bg-white border-0 cursor-pointer">
+          <button type="submit" className="bg-[#fff] border-0 cursor-pointer">
             <img
               src="https://amaranoc.am/images/header/search.svg"
               alt=""
