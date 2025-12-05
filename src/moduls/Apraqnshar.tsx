@@ -1,3 +1,4 @@
+import Bajiner from "./Apraqnsharbajiner";
 import Filtr from "./Apraqnsharfiltr";
 
 export default function Apranqashar() {
@@ -7,6 +8,9 @@ export default function Apranqashar() {
                 <div className="px-[9vw]">
                     <div className="flex">
                         <Filtr />
+                        <div className="flex flex-col mr-[24px] ml-[24px]">
+                            <Bajiner />
+                        </div>
                     </div>
                 </div>
             </div>

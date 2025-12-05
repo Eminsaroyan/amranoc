@@ -403,7 +403,7 @@ export default function Filtr() {
                                 <button
                                     key={option}
                                     onClick={() => setSelectedPool(option)}
-                                    className={`px-[20px] py-[12px] rounded-full border transition-colors duration-300 ${selectedPool === option
+                                    className={`px-[20px] py-[12px] mt-[10px] rounded-full border transition-colors duration-300 ${selectedPool === option
                                         ? "bg-[#101623] text-[#fff] border-black"
                                         : "bg-[#fff] text-[#101623] border-[rgba(16,22,35,0.2)]"
                                         }`}

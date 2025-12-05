@@ -2,7 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
     margin: 0;
     padding: 0;
+}
+
+/* Chrome, Safari, Edge */
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox */
+.scroll-hide {
+  scrollbar-width: none;
 }
