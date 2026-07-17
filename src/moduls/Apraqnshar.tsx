@@ -44,17 +44,17 @@ export default function Apranqashar() {
   useEffect(() => {
     let data = [...apranq];
 
-    // Filter by pool
+ 
     if (filters.pool !== "Բոլորը") {
       data = data.filter((item) => item.pool === filters.pool);
     }
 
-    // Filter by people
+
     if (filters.people) {
       data = data.filter((item) => item.qanak?.maxPeople >= filters.people);
     }
 
-    // Filter by rooms
+
     if (filters.rooms !== "Բոլորը") {
       if (filters.rooms === "6 և ավելի") {
         data = data.filter((item) => item.rooms >= 6);
@@ -63,12 +63,12 @@ export default function Apranqashar() {
       }
     }
 
-    // Filter by region
+
     if (filters.region.length > 0) {
       data = data.filter((item) => filters.region.includes(item.location.city));
     }
 
-    // Filter by advantages
+
     if (filters.advantages.length > 0) {
       data = data.filter((item) =>
         filters.advantages.every((adv) => item.advantages?.includes(adv))
@@ -85,7 +85,7 @@ export default function Apranqashar() {
       <div className="mt-[40px] sm:mt-[32px] md:mt-10">
         <div className="px-[9vw]">
           <div className="flex">
-            {/* Ֆիլտրերի կոմպոնենտը ստանում է filters և setFilters */}
+
             <Filtr filters={filters} setFilters={setFilters} />
 
             <div className="flex flex-col mr-6 ml-6">
