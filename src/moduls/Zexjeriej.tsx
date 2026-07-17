@@ -1,3 +1,5 @@
+import Zexjerqart from "./Zexjerqart";
+
 const discounts = [
     {
         percent: "-15%",
@@ -87,6 +89,7 @@ export default function Discounts() {
 
                 </div>
 
+            <Zexjerqart />
             </div>
         </main>
     );
