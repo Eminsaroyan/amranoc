@@ -1,3 +1,5 @@
+import Footone from "./Footerone"
+import Foottwo from "./Footertwo"
 import Header from "./Header"
 import Zexjerej from "./Zexjeriej"
 
@@ -6,6 +8,8 @@ export default function Zexcher(){
         <>
         <Header />
         <Zexjerej />
+        <Footone />
+        <Foottwo />
         </>
     )
 }
