@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-, "src/moduls/uploadApranq.js", "src/moduls/firebase.js"  ],
+, "src/moduls/uploadApranq.js", "src/moduls/firebase.ts"  ],
   "exclude": ["node_modules"]
 }

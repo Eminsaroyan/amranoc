@@ -1,4 +1,5 @@
 import PriceRange from "./PriceRange";
+import Zexjerapranq from "./Zexjerapranq"
 
 export default function Zexjereq() {
     return (
@@ -15,6 +16,7 @@ export default function Zexjereq() {
             </div>
 
             <PriceRange />
+            <Zexjerapranq />
 
         </div>
     );
