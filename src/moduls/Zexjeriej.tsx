@@ -1,3 +1,4 @@
+import Zexjereq from "./Zexjerereq";
 import Zexjerqart from "./Zexjerqart";
 
 const discounts = [
@@ -42,7 +43,7 @@ export default function Discounts() {
                             className="
                                 relative overflow-hidden
                                 flex flex-col justify-between
-                                h-[240px]
+                                h-[190px]
                                 p-[28px]
                                 rounded-[20px]
                                 shadow-cardShadow
@@ -89,7 +90,8 @@ export default function Discounts() {
 
                 </div>
 
-            <Zexjerqart />
+                <Zexjerqart />
+                <Zexjereq />
             </div>
         </main>
     );

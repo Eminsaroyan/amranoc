@@ -10,7 +10,7 @@ export default function Zexjerqart() {
     const [selectedPrice, setSelectedPrice] = useState<number | null>(null);
 
     return (
-        <div className="grid grid-cols-2 gap-[24px] mt-[96px]">
+        <div className="grid grid-cols-2 gap-[24px] mt-[96px] mb-[96px]">
             <div className="flex flex-col gap-[16px] bg-[#f5f5f5] py-[24px] px-[16px] rounded-[16px] shadow-cardShadow">
                 <div className="pb-[12px] border-b border-b-[#fd993a]">
                     <p className="text-[30px] leading-[120%] font-[400] font-anton text-secondary uppercase">
