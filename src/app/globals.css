@@ -16,3 +16,25 @@
 .scroll-hide {
   scrollbar-width: none;
 }
+
+/* Պարտադրում ենք բարակ լայնություն */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 2px !important;
+}
+
+/* Ֆոնը դարձնում ենք լրիվ թափանցիկ */
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
+/* Շարժվող գիծը դարձնում ենք սև */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #000000 !important;
+    border-radius: 0px !important;
+}
+
+/* Firefox բրաուզերի համար */
+.custom-scrollbar {
+    scrollbar-width: thin !important;
+    scrollbar-color: #000000 transparent !important;
+}

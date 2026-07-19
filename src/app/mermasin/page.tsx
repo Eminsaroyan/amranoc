@@ -1,5 +1,5 @@
 import Headermer from "@/moduls/Headermermasin";
-
+import Mermasin from "@/moduls/Mermasin";
 
 
 export default function Page() {
@@ -22,6 +22,7 @@ export default function Page() {
       <div className="py-12 px-[7vw]">
 
       </div>
+      <Mermasin />
 
     </main>
   );
