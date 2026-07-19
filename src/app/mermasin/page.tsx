@@ -1,4 +1,4 @@
-import Headermer from "@/moduls/Headermermasin";
+import Headermermasin from "@/moduls/Headermermasin";
 import Mermasin from "@/moduls/Mermasin";
 
 
@@ -6,8 +6,8 @@ export default function Page() {
   return (
     // 2. Արտաքին div-ին տուր relative դասը
     <main className="relative w-full">
-      <Headermer />
-      {/* 3. Header-ը դիր հենց այստեղ՝ նկարից անմիջապես վերև */}
+      <Headermermasin />
+  
 
       {/* 4. Նկարի կոնտեյները */}
       <div className="relative w-full h-screen">

@@ -88,15 +88,15 @@ export default function Apranqashar() {
 
             <Filtr filters={filters} setFilters={setFilters} />
 
-            <div className="flex flex-col mr-6 ml-6">
+            <div className="flex flex-col mr-[24px] ml-[24px]">
               <Bajiner />
 
-              <div className="pt-6">
-                <p className="text-lg pb-6 leading-[140%] font-semibold">
+              <div className="pt-[24px]">
+                <p className="text-lg pb-[24px] leading-[140%] font-semibold">
                   Լավագույն առաջարկներ
                 </p>
 
-                <div className="grid grid-cols-3 gap-6">
+                <div className="grid grid-cols-3 gap-[26px]">
                   {filteredApranq.map((item) => (
                     <Apranq
                       key={item.id}

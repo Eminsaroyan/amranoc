@@ -1,15 +1,26 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname } from "next/navigation"; 
+import { auth } from "@/moduls/firebase";
+import { onAuthStateChanged, User } from "firebase/auth";
 
-export default function Header() {
+export default function Headermermasin() {
+    const [user, setUser] = useState<User | null>(null);
     const pathname = usePathname();
 
     const isActive = (href: string) => pathname === href;
 
-    // Ստուգում ենք՝ արդյոք «Մեր մասին» էջում ենք
+    useEffect(() => {
+        const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+            setUser(currentUser);
+        });
+        return () => unsubscribe();
+    }, []);
+
     const isAboutPage = pathname === "/mermasin";
+    const targetLink = user ? "/profile" : "/register";
 
     return (
         <header
@@ -22,7 +33,6 @@ export default function Header() {
             <div className="cursor-pointer">
                 <Link href="/">
                     <img
-                        // Եթե «Մեր մասին» էջն է, օգտագործում ենք light (սպիտակ) լոգոն, հակառակ դեպքում՝ սովորականը
                         src={
                             isAboutPage
                                 ? "https://amaranoc.am/images/light-logo.svg"
@@ -81,15 +91,15 @@ export default function Header() {
                     />
                 </div>
 
-                {/* Օգտագործողի իկոնան - Ուղղված չափսերով */}
-                <div className={`ml-[12px] mr-[12px] p-[10px] cursor-pointer ${isAboutPage ? "brightness-0 invert" : ""}`}>
-                    <img
-                        src="https://amaranoc.am/images/header/user.svg"
-                        alt="user"
-                    
-                        className="w-[50px] h-[50px] object-contain"
-                    />
-                </div>
+                <Link href={targetLink} passHref legacyBehavior>
+                    <div className={`ml-[12px] mr-[12px] p-[10px] cursor-pointer ${isAboutPage ? "brightness-0 invert" : ""}`}>
+                        <img
+                            src="https://amaranoc.am/images/header/user.svg"
+                            alt="user"
+                            className="w-[50px] h-[50px] object-contain"
+                        />
+                    </div>
+                </Link>
 
                 <form
                     className={`w-[244px] flex justify-between py-[12px] px-[16px] border rounded-[40px] transition-all
