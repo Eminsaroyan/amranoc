@@ -1,3 +1,4 @@
+import Kardisner from "./Karciqner"
 import Mermasinchors from "./Mermasinchors"
 import Mermasinereq from "./Mermasinereq"
 import Mermasinerku from "./Mermasinerku"
@@ -12,6 +13,7 @@ export default function Mermasin(){
         <Mermasinereq />
         <Mermasinchors />
         <Mermasinhing />
+        <Kardisner />
         </>
     )
 }
