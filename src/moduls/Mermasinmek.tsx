@@ -14,9 +14,9 @@ export default function Mermasinmek() {
                                 />
                             </div>
 
-                            <div className="flex flex-col gap-[32px] w-full max-w-[350px] h-full justify-center px-[100px]">
+                            <div className="flex flex-col gap-[32px] w-full max-w-[390px] h-full justify-center px-[100px]">
                                 
-                                {/* Վերնագրի հատված */}
+
                                 <div className="flex items-center gap-[16px] shrink-0">
                                     <div className="w-[16px] h-[1px] bg-[#000]"></div>
                                     <h2 className="font-armHmk text-black text-[32px] font-[800] whitespace-nowrap uppercase tracking-wide">
@@ -25,7 +25,6 @@ export default function Mermasinmek() {
                                     <div className="flex-1 h-[1px] bg-[#000]"></div>
                                 </div>
 
-                                {/* Տեքստային հատված՝ իսկական overflow-ով և custom սքրոլբարով */}
                                 <div className="h-[280px]  overflow-y-auto pr-[16px] text-left font-[300] text-[19px]  text-gray-800 
                                 leading-[24px] space-y-[16px] custom-scrollbar">
                                     <p>
