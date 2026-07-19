@@ -1,3 +1,5 @@
+import Footone from "./Footerone"
+import Foottwo from "./Footertwo"
 import Kardisner from "./Karciqner"
 import Mermasinchors from "./Mermasinchors"
 import Mermasinereq from "./Mermasinereq"
@@ -14,6 +16,8 @@ export default function Mermasin(){
         <Mermasinchors />
         <Mermasinhing />
         <Kardisner />
+        <Footone />
+        <Foottwo />
         </>
     )
 }
