@@ -14,7 +14,7 @@ export default function Mermasinereq() {
                                 />
                             </div>
 
-                            <div className="flex flex-col gap-[32px] w-full max-w-[400px] h-full justify-center px-[100px]">
+                            <div className="flex flex-col gap-[32px] w-full max-w-[350px] h-full justify-center px-[100px]">
 
                                 <div className="flex items-center gap-[16px] shrink-0">
                                     <div className="w-[16px] h-[1px] bg-[#000]"></div>

@@ -1,3 +1,4 @@
+import Mermasinchors from "./Mermasinchors"
 import Mermasinereq from "./Mermasinereq"
 import Mermasinerku from "./Mermasinerku"
 import Mermasinmek from "./Mermasinmek"
@@ -8,6 +9,7 @@ export default function Mermasin(){
         <Mermasinmek />
         <Mermasinerku />
         <Mermasinereq />
+        <Mermasinchors />
         </>
     )
 }
